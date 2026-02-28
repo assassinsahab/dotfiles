@@ -8,7 +8,7 @@
     format_tag_separator: " | ",
     browser_column_widths: [20, 38, 42],
     background_color:None,
-    text_color: "#dfe1eb",
+    text_color: None,
     header_background_color: None,
     modal_background_color: None,
     modal_backdrop: false,
@@ -16,11 +16,11 @@
     preview_metadata_group_style: (fg: "#ffffff", modifiers: "Bold"),
     tab_bar: (
         enabled: true,
-        active_style: (fg: "#181825", bg: "#ffffff", modifiers: "Bold"),
+        active_style: (fg: "#000000", bg: "#ffffff", modifiers: "Bold"),
         inactive_style: (),
     ),
     highlighted_item_style: (fg: "#ffffff", modifiers: "Bold"),
-    current_item_style: (fg: "#181825", bg: "#ffffff", modifiers: "Bold"),
+    current_item_style: (fg: "#000000", bg: "#ffffff", modifiers: "Bold"),
     borders_style: (fg: "#ffffff"),
     highlight_border_style: (fg: "#ffffff"),
     symbols: (
@@ -34,11 +34,11 @@
         playlist_style: None,
     ),
     level_styles: (
-        info: (fg: "#adacb2", bg: "#181825"),
-        warn: (fg: "#9399b2", bg: "#181825"),
-        error: (fg: "red", bg: "#181825"),
-        debug: (fg: "light_green", bg: "#181825"),
-        trace: (fg: "magenta", bg: "#181825"),
+        info: (fg: "#000000", bg: "#ffffff"),
+        warn: (fg: "#ffffff", bg: "#ffffff"),
+        error: (fg: "red", bg: "#ffffff"),
+        debug: (fg: "light_green", bg: "#ffffff"),
+        trace: (fg: "magenta", bg: "#ffffff"),
     ),
     progress_bar: (
         symbols: ["█", "█", "█", " ", "█"],
@@ -58,6 +58,7 @@
                 default: (kind: Text("Unknown"))
             ),
             width: "33%",
+            label:"",
         ),
         (
             prop: (kind: Property(Title),
@@ -113,7 +114,7 @@ layout: Split(
                     )
                 ],
                 right: [
-                    (kind: Property(Widget(ScanStatus)), style: (fg: "#ffffff")),
+                    (kind: Property(Widget(ScanStatus)), style: (fg: "#000000")),
                     (kind: Property(Widget(Volume)), style: (fg: "#ffffff"))
                 ]
             ),
