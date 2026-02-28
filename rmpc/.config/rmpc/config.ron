@@ -147,11 +147,11 @@ tabs: [
                         direction: Vertical,
                         panes: [
                             (
-                                size: "50%",
+                                size: "55%",
                                 pane: Pane(AlbumArt),
                             ),
                             (
-                                size: "50%",
+                                size: "45%",
                                 borders: "TOP",
                                 pane: Pane(Lyrics),
                             ),

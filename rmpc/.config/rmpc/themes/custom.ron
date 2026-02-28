@@ -12,17 +12,17 @@
     header_background_color: None,
     modal_background_color: None,
     modal_backdrop: false,
-    preview_label_style: (fg: "#9399b2"),
-    preview_metadata_group_style: (fg: "#9399b2", modifiers: "Bold"),
+    preview_label_style: (fg: "#ffffff"),
+    preview_metadata_group_style: (fg: "#ffffff", modifiers: "Bold"),
     tab_bar: (
         enabled: true,
-        active_style: (fg: "#181825", bg: "#adacb2", modifiers: "Bold"),
+        active_style: (fg: "#181825", bg: "#ffffff", modifiers: "Bold"),
         inactive_style: (),
     ),
-    highlighted_item_style: (fg: "#a6adc8", modifiers: "Bold"),
-    current_item_style: (fg: "#181825", bg: "#adacb2", modifiers: "Bold"),
-    borders_style: (fg: "#a6adc8"),
-    highlight_border_style: (fg: "#adacb2"),
+    highlighted_item_style: (fg: "#ffffff", modifiers: "Bold"),
+    current_item_style: (fg: "#181825", bg: "#ffffff", modifiers: "Bold"),
+    borders_style: (fg: "#ffffff"),
+    highlight_border_style: (fg: "#ffffff"),
     symbols: (
         song: "S",
         dir: " ",
@@ -41,30 +41,16 @@
         trace: (fg: "magenta", bg: "#181825"),
     ),
     progress_bar: (
-        symbols: ["", "█", "◣", "█", "█" ],
-        track_style: (fg: "#1e2030"),
-        elapsed_style: (fg: "#a6adc8"),
-        thumb_style: (fg: "#a6adc8", bg: "#1e2030"),
-    ),
-    cava: (
-    bar_symbols: ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
-    bar_width: 2,
-    bar_spacing: 1,
-    bar_color: Gradient({
-
-          0: "#45475a",
-
-         50: "#6c7086",
-
-        100: "#b4befe",
-
-    })
+        symbols: ["█", "█", "█", " ", "█"],
+        track_style: (fg: "#ffffff"),
+        elapsed_style: (fg: "#ffffff"),
+        thumb_style: (fg: "#ffffff", bg: "#ffffff"),
     ),
     scrollbar: (
-        symbols: ["│", "█", "⊤", "⊥"],
+        symbols: ["│", "█", "▲", "▼"],
         track_style: (),
         ends_style: (),
-        thumb_style: (fg: "#a6adc8"),
+        thumb_style: (fg: "#ffffff"),
     ),
     song_table_format: [
         (
@@ -117,9 +103,9 @@ layout: Split(
         rows: [
             (
                 left: [
-                    (kind: Text("|"), style: (fg: "#a6adc8", modifiers: "Bold")),
-                    (kind: Property(Status(StateV2(playing_label: "Playing", paused_label: "Paused", stopped_label: "Stopped"))), style: (fg: "#a6adc8", modifiers: "Bold")),
-                    (kind: Text("|"), style: (fg: "#a6adc8", modifiers: "Bold"))
+                    (kind: Text("|"), style: (fg: "#ffffff", modifiers: "Bold")),
+                    (kind: Property(Status(StateV2(playing_label: "Playing", paused_label: "Paused", stopped_label: "Stopped"))), style: (fg: "#ffffff", modifiers: "Bold")),
+                    (kind: Text("|"), style: (fg: "#ffffff", modifiers: "Bold"))
                 ],
                 center: [
                     (kind: Property(Song(Title)), style: (modifiers: "Bold"),
@@ -127,8 +113,8 @@ layout: Split(
                     )
                 ],
                 right: [
-                    (kind: Property(Widget(ScanStatus)), style: (fg: "#a6adc8")),
-                    (kind: Property(Widget(Volume)), style: (fg: "#a6adc8"))
+                    (kind: Property(Widget(ScanStatus)), style: (fg: "#ffffff")),
+                    (kind: Property(Widget(Volume)), style: (fg: "#ffffff"))
                 ]
             ),
             (
@@ -138,8 +124,8 @@ layout: Split(
                     (kind: Property(Status(Duration))),
                 ],
                 center: [
-                    (kind: Property(Song(Artist)), style: (fg: "#9399b2", modifiers: "Bold"),
-                        default: (kind: Text("Unknown"), style: (fg: "#9399b2", modifiers: "Bold"))
+                    (kind: Property(Song(Artist)), style: (fg: "#ffffff", modifiers: "Bold"),
+                        default: (kind: Text("Unknown"), style: (fg: "#ffffff", modifiers: "Bold"))
                     ),
                     (kind: Text(" - ")),
                     (kind: Property(Song(Album)),
@@ -152,7 +138,7 @@ layout: Split(
                             active_style: (fg: "white", modifiers: "Bold"),
                             separator_style: (fg: "white")))
                         ),
-                        style: (fg: "#9399b2")
+                        style: (fg: "#ffffff")
                     ),
                 ]
             ),
