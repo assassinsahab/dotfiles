@@ -28,3 +28,6 @@ ignore = 0              # Ignore small values (0-100)
 sensitivity = 100        # Overall sensitivity (1-1000)
 autosens = 1            # Auto-sensitivity adjustment
 overshoot = 20          # Overshoot percentage
+
+[input]
+method = pipewire
