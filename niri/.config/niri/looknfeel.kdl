@@ -1,0 +1,33 @@
+// ============================================================================
+// LOOK & FEEL SETTINGS
+// Subtle animations and visual enhancements
+// ============================================================================
+
+// Window animations - using supported curves only
+animations {
+    // Window open/close animations
+    window-open {
+        duration-ms 200
+        curve "ease-out-quad"  // Supported curve
+    }
+    
+    window-close {
+        duration-ms 150
+        curve "ease-out-quad"  // Using quad for both
+    }
+    
+    // Workspace switch animations
+    workspace-switch {
+        duration-ms 250
+        curve "ease-out-cubic"  // Slightly smoother
+    }
+}
+
+// Cursor settings (simplified to what's supported)
+cursor {
+    // Hide cursor when typing
+    hide-when-typing true
+}
+
+// Note: Some features like window-focus, column-move, theme selection,
+// warp-on-workspace-change, and live-resize aren't supported in this version

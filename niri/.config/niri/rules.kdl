@@ -1,0 +1,35 @@
+// Default window styling
+window-rule {
+    geometry-corner-radius 16
+    clip-to-geometry true
+}
+
+// Thunar transparency
+window-rule {
+    match app-id="thunar"
+    opacity 0.88
+}
+
+// Dolphin transparency
+window-rule {
+    match app-id="org.kde.dolphin"
+    opacity 0.88
+}
+
+// Fooyin transparency
+window-rule {
+    match app-id="org.fooyin.fooyin"
+    opacity 0.88
+}
+
+// Set the regular wallpaper on the backdrop.
+layer-rule {
+    match namespace="^noctalia-wallpaper.*$"
+    place-within-backdrop true
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
+}

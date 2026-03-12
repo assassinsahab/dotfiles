@@ -1,0 +1,29 @@
+// Main niri configuration
+// Imports all modular components
+
+include "input.kdl"
+include "layout.kdl"
+include "autostart.kdl"     // Your spawn-at-startup file
+include "rules.kdl"          // Your window rules file
+include "keybinds.kdl"       // All keybindings in one file
+include "noctalia.kdl"
+include "looknfeel.kdl"
+
+// Global settings
+prefer-no-csd
+screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
+
+hotkey-overlay { 
+    skip-at-startup
+    hide-not-bound
+} 
+
+debug {
+  honor-xdg-activation-with-invalid-serial
+}
+
+cursor {
+    // Set the cursor theme and size
+    xcursor-theme "Adwaita"  // This is usually the default
+    xcursor-size 24
+}
