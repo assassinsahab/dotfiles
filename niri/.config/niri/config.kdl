@@ -27,3 +27,8 @@ cursor {
     xcursor-theme "Adwaita"  // This is usually the default
     xcursor-size 24
 }
+gestures {
+    hot-corners {
+        off
+    }
+}
