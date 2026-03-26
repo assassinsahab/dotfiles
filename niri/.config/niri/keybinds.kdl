@@ -26,6 +26,7 @@ binds {
     // Toggle overview
     Mod+O repeat=false { toggle-overview; }
 
+    Mod+S { spawn "~/.local/bin/screenshot.sh"; }
 
     // ------------------------------------------------------------------------
     // APPLICATION LAUNCHERS
@@ -41,7 +42,7 @@ binds {
     Mod+D { spawn "dolphin"; }
     
     // Noctalia control center
-    Mod+S { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
+    Mod+Y { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
     
     // Vicinae launcher (kept original)
     Mod+Space { spawn "vicinae" "open"; }
