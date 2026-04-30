@@ -35,8 +35,8 @@ binds {
     // Terminal (foot) - CHANGED: Now opens vicinae instead
     Mod+Return { spawn "foot"; }
     
-    // Web browser - CHANGED: Now opens librewolf instead of zen-browser
-    Mod+B { spawn "librewolf"; }
+    // Web browser 
+    Mod+B { spawn "zen-browser"; }
     
     // File manager
     Mod+D { spawn "dolphin"; }
