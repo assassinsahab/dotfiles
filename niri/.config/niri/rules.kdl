@@ -4,22 +4,31 @@ window-rule {
     clip-to-geometry true
 }
 
-// Thunar transparency
+// Thunar transparency and blur
 window-rule {
     match app-id="thunar"
     opacity 0.88
+    background-effect {
+        blur true
+    }
 }
 
-// Dolphin transparency
+// Dolphin transparency and blur
 window-rule {
     match app-id="org.kde.dolphin"
-    opacity 0.88
+    opacity 0.9
+    background-effect {
+        blur true
+    }
 }
 
-// Fooyin transparency
+// Fooyin transparency and blur
 window-rule {
     match app-id="org.fooyin.fooyin"
-    opacity 0.88
+    opacity 0.9
+    background-effect {
+        blur true
+    }
 }
 
 // Set the regular wallpaper on the backdrop.
@@ -31,5 +40,12 @@ layer-rule {
 overview {
     workspace-shadow {
         off
+    }
+}
+
+window-rule {
+    match app-id="^foot$"
+    background-effect {
+        blur true
     }
 }
