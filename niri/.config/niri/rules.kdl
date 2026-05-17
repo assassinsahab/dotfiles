@@ -4,22 +4,16 @@ window-rule {
     clip-to-geometry true
 }
 
-// Thunar transparency
-window-rule {
-    match app-id="thunar"
-    opacity 0.88
-}
-
 // Dolphin transparency
 window-rule {
     match app-id="org.kde.dolphin"
-    opacity 0.88
+    opacity 0.92
 }
 
 // Fooyin transparency
 window-rule {
     match app-id="org.fooyin.fooyin"
-    opacity 0.88
+    opacity 0.92
 }
 
 // Set the regular wallpaper on the backdrop.

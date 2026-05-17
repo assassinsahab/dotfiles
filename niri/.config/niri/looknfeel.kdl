@@ -10,12 +10,12 @@ animations {
         duration-ms 200
         curve "ease-out-quad"  // Supported curve
     }
-    
+
     window-close {
         duration-ms 150
         curve "ease-out-quad"  // Using quad for both
     }
-    
+
     // Workspace switch animations
     workspace-switch {
         duration-ms 250
