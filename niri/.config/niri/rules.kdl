@@ -4,19 +4,52 @@ window-rule {
     clip-to-geometry true
 }
 
-// Dolphin transparency
+// Dolphin
 window-rule {
     match app-id="org.kde.dolphin"
-    opacity 0.92
+    opacity 0.75
+    background-effect {
+        blur true
+    }
 }
 
-// Fooyin transparency
+// Fooyin
 window-rule {
     match app-id="org.fooyin.fooyin"
-    opacity 0.92
+    opacity 0.75
+    background-effect {
+        blur true
+    }
 }
 
-// Set the regular wallpaper on the backdrop.
+// Zen Browser
+window-rule {
+    match app-id="zen"
+    opacity 0.85
+    background-effect {
+        blur true
+    }
+}
+
+// Foot
+window-rule {
+    match app-id="foot"
+    opacity 0.75
+    background-effect {
+        blur true
+    }
+}
+
+// VS Codium
+window-rule {
+    match app-id="codium"
+    opacity 0.85
+    background-effect {
+        blur true
+    }
+}
+
+// Set the regular wallpaper on the backdrop
 layer-rule {
     match namespace="^noctalia-wallpaper.*$"
     place-within-backdrop true
