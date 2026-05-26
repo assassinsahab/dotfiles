@@ -1,8 +1,6 @@
 // ============================================================================
 // NIRI KEYBINDINGS
 // ============================================================================
-// Mod key is typically Super/Windows key
-// ============================================================================
 
 binds {
 
@@ -32,7 +30,7 @@ binds {
     // APPLICATION LAUNCHERS
     // ------------------------------------------------------------------------
     
-    // Terminal (foot) - CHANGED: Now opens vicinae instead
+    // Terminal (foot) - CHANGED: 
     Mod+Return { spawn "foot"; }
     
     // Web browser 
@@ -44,8 +42,8 @@ binds {
     // Noctalia control center
     Mod+Y { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
     
-    // Vicinae launcher (kept original)
-    Mod+Space { spawn "vicinae" "open"; }
+    // Noctalia Launcher
+    Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
 
     
     // ------------------------------------------------------------------------
